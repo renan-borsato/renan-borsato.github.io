@@ -1,54 +1,54 @@
-'use client';
+"use client";
 
-import Navbar from './components/Navbar/Navbar';
-import ProjectCard from './components/ProjectCard/ProjectCard';
-import SkillsWidget from './components/SkillsWidget/SkillsWidget';
-import WorkWidget from './components/WorkWidget/WorkWidget';
-import UsesSection from './components/UsesSection/UsesSection';
-import SignupWidget from './components/SignupWidget/SignupWidget';
-import Footer from './components/Footer/Footer';
-import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
+import Navbar from "./components/Navbar/Navbar";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
+import SkillsWidget from "./components/SkillsWidget/SkillsWidget";
+import WorkWidget from "./components/WorkWidget/WorkWidget";
+import UsesSection from "./components/UsesSection/UsesSection";
+import SignupWidget from "./components/SignupWidget/SignupWidget";
+import Footer from "./components/Footer/Footer";
+import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
 
 export default function HomePage() {
   const navbarOptions = [
-    { path: '#projects', label: 'Projects' },
-    { path: '#skills', label: 'Skills' },
-    { path: '#work', label: 'Work' },
-    { path: '#uses', label: 'Uses' },
+    { path: "#projects", label: "Projects" },
+    { path: "#skills", label: "Skills" },
+    { path: "#work", label: "Work" },
+    { path: "#uses", label: "Uses" },
   ];
 
   const projects = [
     {
-      logo: '/logo1.png',
-      name: 'Project 1',
-      content: 'Short description of Project 1',
-      link: 'https://example.com',
+      logo: "/logo1.png",
+      name: "Project 1",
+      content: "Short description of Project 1",
+      link: "https://example.com",
     },
     {
-      logo: '/logo2.png',
-      name: 'Project 2',
-      content: 'Short description of Project 2',
-      link: 'https://example.com',
+      logo: "/logo2.png",
+      name: "Project 2",
+      content: "Short description of Project 2",
+      link: "https://example.com",
     },
   ];
 
   const skills = [
-    { icon: '/js.png', name: 'JavaScript', proficiency: 90 },
-    { icon: '/react.png', name: 'React', proficiency: 85 },
+    { icon: "/js.png", name: "JavaScript", proficiency: 90 },
+    { icon: "/react.png", name: "React", proficiency: 85 },
   ];
 
   const work = [
     {
-      logo: '/company1.png',
-      organization: 'Company 1',
-      jobTitle: 'Frontend Developer',
+      logo: "/company1.png",
+      organization: "Company 1",
+      jobTitle: "Frontend Developer",
       startYear: 2020,
       endYear: 2022,
     },
     {
-      logo: '/company2.png',
-      organization: 'Company 2',
-      jobTitle: 'Fullstack Developer',
+      logo: "/company2.png",
+      organization: "Company 2",
+      jobTitle: "Fullstack Developer",
       startYear: 2022,
       endYear: null,
     },
@@ -56,24 +56,24 @@ export default function HomePage() {
 
   const usesItems = [
     {
-      groupName: 'Hardware',
+      groupName: "Hardware",
       items: [
-        { title: 'Laptop', description: 'MacBook Pro 16"' },
-        { title: 'Monitor', description: 'Dell 4K UltraSharp' },
+        { title: "Laptop", description: 'MacBook Pro 16"' },
+        { title: "Monitor", description: "Dell 4K UltraSharp" },
       ],
     },
     {
-      groupName: 'Software',
+      groupName: "Software",
       items: [
-        { title: 'Editor', description: 'VS Code' },
-        { title: 'Terminal', description: 'iTerm2' },
+        { title: "Editor", description: "VS Code" },
+        { title: "Terminal", description: "iTerm2" },
       ],
     },
   ];
 
   const footerLinks = [
-    { title: 'Privacy', url: '#' },
-    { title: 'GitHub', url: 'https://github.com' },
+    { title: "Privacy", url: "#" },
+    { title: "GitHub", url: "https://github.com" },
   ];
 
   return (

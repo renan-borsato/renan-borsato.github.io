@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./Navbar.css";
 import PropTypes from "prop-types";
 
@@ -7,9 +8,9 @@ function Navbar({ options }) {
       <ul data-testid="ul">
         {(options || []).map((option, index) => (
           <li key={index} data-testid={`li${index}`}>
-            <a data-testid={`a${index}`} className="link" href={option.path}>
+            <Link data-testid={`a${index}`} className="link" href={option.path}>
               {option.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
