@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import SkillsWidget from "./components/SkillsWidget/SkillsWidget";
@@ -10,6 +11,12 @@ import Footer from "./components/Footer/Footer";
 import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
 
 export default function HomePage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const navbarOptions = [
     { path: "#projects", label: "Projects" },
     { path: "#skills", label: "Skills" },
@@ -78,7 +85,7 @@ export default function HomePage() {
 
   return (
     <>
-      <ThemeSwitcher />
+      {mounted && <ThemeSwitcher />}
       <Navbar options={navbarOptions} />
 
       <main>

@@ -1,9 +1,16 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import UsesSection from "../components/UsesSection/UsesSection";
 import ThemeSwitcher from "../components/ThemeSwitcher/ThemeSwitcher";
 
 export default function UsesPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const usesItems = [
     {
       groupName: "Hardware",
@@ -35,7 +42,7 @@ export default function UsesPage() {
 
   return (
     <>
-      <ThemeSwitcher />
+      {mounted && <ThemeSwitcher />}
       <main style={{ padding: "32px", maxWidth: "900px", margin: "0 auto" }}>
         <h1 style={{ fontSize: "36px", marginBottom: "24px" }}>
           My Setup & Tools

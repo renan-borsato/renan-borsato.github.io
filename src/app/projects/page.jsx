@@ -1,9 +1,16 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import ThemeSwitcher from "../components/ThemeSwitcher/ThemeSwitcher";
 
 export default function ProjectsPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const projects = [
     {
       logo: "/logo1.png",
@@ -30,7 +37,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <ThemeSwitcher />
+      {mounted && <ThemeSwitcher />}
       <main style={{ padding: "32px", maxWidth: "1000px", margin: "0 auto" }}>
         <h1 style={{ fontSize: "36px", marginBottom: "24px" }}>Projects</h1>
         <div
