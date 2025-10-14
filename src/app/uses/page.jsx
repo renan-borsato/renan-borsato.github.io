@@ -37,7 +37,9 @@ export default function UsesPage() {
     <>
       <ThemeSwitcher />
       <main style={{ padding: "32px", maxWidth: "900px", margin: "0 auto" }}>
-        <h1 style={{ fontSize: "36px", marginBottom: "24px" }}>My Setup & Tools</h1>
+        <h1 style={{ fontSize: "36px", marginBottom: "24px" }}>
+          My Setup & Tools
+        </h1>
         <UsesSection items={usesItems} />
       </main>
     </>

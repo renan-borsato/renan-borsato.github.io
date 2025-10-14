@@ -8,19 +8,22 @@ export default function ProjectsPage() {
     {
       logo: "/logo1.png",
       name: "Project 1",
-      content: "A short description of Project 1 showcasing its main features and purpose.",
+      content:
+        "A short description of Project 1 showcasing its main features and purpose.",
       link: "https://example.com",
     },
     {
       logo: "/logo2.png",
       name: "Project 2",
-      content: "A short description of Project 2 highlighting its functionality and technologies used.",
+      content:
+        "A short description of Project 2 highlighting its functionality and technologies used.",
       link: "https://example.com",
     },
     {
       logo: "/logo3.png",
       name: "Project 3",
-      content: "A short description of Project 3 explaining its goals and impact.",
+      content:
+        "A short description of Project 3 explaining its goals and impact.",
       link: "https://example.com",
     },
   ];
