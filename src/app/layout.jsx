@@ -3,8 +3,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Showcasing my projects and skills.",
+  title: "Renan Borsato | Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  description: "Showcasing my projects and skills",
 };
 
 export default function RootLayout({ children }) {
