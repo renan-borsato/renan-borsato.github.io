@@ -13,18 +13,18 @@ export default function Hero() {
           <h1 className="text-4xl font-bold mb-2">I AM RENAN BORSATO</h1>
           <p className="text-xl mb-12">FULL STACK DEVELOPER</p>
           <a
-          href="https://github.com/renan-borsato"
-          className="flex items-center gap-4 text-blue-600 dark:text-blue-400"
-        >
-          <Image
-            src="/github.svg"
-            alt="GitHub"
-            width={20}
-            height={20}
-            className="dark:invert"
-          />
-          VIEW MY WORK
-        </a>
+            href="https://github.com/renan-borsato"
+            className="flex items-center gap-4 text-blue-600 dark:text-blue-400"
+          >
+            <Image
+              src="/github.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+              className="dark:invert"
+            />
+            VIEW MY WORK
+          </a>
         </div>
       </div>
     </section>
