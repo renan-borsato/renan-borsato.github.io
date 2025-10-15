@@ -1,25 +1,18 @@
 import "./globals.css";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-
-const navbarOptions = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
-  { path: "/uses", label: "Uses" },
-];
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Portfolio",
-  description: "by Renan Borsato",
+  title: "My Portfolio",
+  description: "Showcasing my projects and skills.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar options={navbarOptions} />
-        {children}
+        <Navbar />
+        <main className="max-w-6xl mx-auto px-6 py-12">{children}</main>
         <Footer />
       </body>
     </html>
