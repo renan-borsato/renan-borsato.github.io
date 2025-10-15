@@ -15,7 +15,7 @@ export default function Hero() {
           <p className="text-xl mb-12">FULL STACK DEVELOPER</p>
           <a
             href="https://github.com/renan-borsato"
-            className="flex items-center gap-4 text-blue-600 dark:text-blue-400"
+            className="flex items-center gap-4 text-blue-600 dark:text-blue-400 hover:underline"
           >
             <Image
               src="/github.svg"

@@ -81,7 +81,7 @@ export default function Projects() {
             <p className="text-sm mb-4">{project.tech}</p>
             <a
               href={project.link}
-              className="flex items-center gap-4 text-blue-600 dark:text-blue-400"
+              className="flex items-center gap-4 text-blue-600 dark:text-blue-400 hover:underline"
             >
               <Image
                 src="/github.svg"
